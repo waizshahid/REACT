@@ -10,6 +10,15 @@ import ButtonPage from 'pages/ButtonPage';
 import CardPage from 'pages/CardPage';
 import ChartPage from 'pages/ChartPage';
 // pages
+import NewOrderPage from 'pages/NewOrderPage';
+import OrderSummaryPage from 'pages/OrderSummaryPage';
+import InventoryPage from 'pages/InventoryPage';
+import PurchasePage from 'pages/PurchasePage';
+import SalesPage from 'pages/SalesPage';
+import TapelinePage from 'pages/TapelinePage';
+import LoomPage from 'pages/LoomPage';
+import AddDropPage from 'pages/AddDropPage';
+
 import DashboardPage from 'pages/DashboardPage';
 import DropdownPage from 'pages/DropdownPage';
 import FormPage from 'pages/FormPage';
@@ -67,6 +76,56 @@ class App extends React.Component {
               path="/buttons"
               layout={MainLayout}
               component={ButtonPage}
+            />
+            <LayoutRoute
+              exact
+              path="/neworder"
+              layout={MainLayout}
+              component={props => (
+              <NewOrderPage
+            />)}/>
+            <LayoutRoute
+              exact
+              path="/ordersummary"
+              layout={MainLayout}
+              component={props => (
+              <OrderSummaryPage
+            />)}/>
+            <LayoutRoute
+              exact
+              path="/inventory"
+              layout={MainLayout}
+              component={InventoryPage}
+            />
+            <LayoutRoute
+              exact
+              path="/purchase"
+              layout={MainLayout}
+              component={PurchasePage}
+            />
+            <LayoutRoute
+              exact
+              path="/sales"
+              layout={MainLayout}
+              component={SalesPage}
+            />
+            <LayoutRoute
+              exact
+              path="/tapeline"
+              layout={MainLayout}
+              component={TapelinePage}
+            />
+            <LayoutRoute
+              exact
+              path="/loom"
+              layout={MainLayout}
+              component={LoomPage}
+            />
+            <LayoutRoute
+              exact
+              path="/adddrop"
+              layout={MainLayout}
+              component={AddDropPage}
             />
             <LayoutRoute
               exact
